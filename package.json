@@ -5,8 +5,9 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
+    "build": "tsc --noEmit",
+    "prepare": "npm run build",
+    "type-check": "tsc"
   },
   "keywords": [
     "react-native",
@@ -21,9 +22,9 @@
     "react-native": "*"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
-    "@types/react-native": "^0.70.0",
-    "typescript": "^4.8.0"
+    "@types/react": "^19.1.7",
+    "@types/react-native": "0.70.0",
+    "typescript": "^5.8.3"
   },
   "repository": {
     "type": "git",

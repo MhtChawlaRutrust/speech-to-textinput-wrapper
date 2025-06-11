@@ -1,28 +1,26 @@
 {
     "compilerOptions": {
       "target": "es5",
-      "lib": ["es6", "dom"],
+      "lib": ["es6", "dom", "es2017"],
       "module": "commonjs",
       "jsx": "react-native",
       "strict": true,
-      "noImplicitAny": true,
-      "strictNullChecks": true,
-      "strictFunctionTypes": true,
-      "strictBindCallApply": true,
-      "strictPropertyInitialization": true,
-      "noImplicitThis": true,
-      "alwaysStrict": true,
+      "moduleResolution": "node",
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "moduleResolution": "node",
       "resolveJsonModule": true,
-      "isolatedModules": true,
-      "noEmit": true,
       "baseUrl": "./",
       "paths": {
-        "*": ["src/*"]
-      }
+        "*": ["src/*", "node_modules/*"]
+      },
+      "typeRoots": ["node_modules/@types"]
     },
-    "exclude": ["node_modules"]
+    "exclude": [
+      "node_modules",
+      "**/__tests__"
+    ],
+    "include": [
+      "src/**/*"
+    ]
   }

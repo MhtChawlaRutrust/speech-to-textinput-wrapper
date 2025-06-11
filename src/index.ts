@@ -1,2 +1,2 @@
 export * from './SpeechToText';
-export * from './SpeechToTextWrapper';
+export * from './SpeechtoTextWrapper';
