@@ -5,6 +5,6 @@ A React Native module that adds speech-to-text functionality to TextInput compon
 ## Installation
 
 ```sh
-npm install react-native-speech-to-text-input
+npm install speech-to-textinput-wrapper
 # or
-yarn add react-native-speech-to-text-input
+yarn add speech-to-textinput-wrapper
