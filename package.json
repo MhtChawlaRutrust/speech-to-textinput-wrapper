@@ -1,6 +1,6 @@
 {
   "name": "speech-to-textinput-wrapper",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Provides S2T support to any Textinput in react native.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -37,7 +37,7 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "prepare": "bob build",
+    "prepare": "",
     "release": "release-it --only-version"
   },
   "keywords": [
@@ -160,5 +160,8 @@
     "languages": "kotlin-objc",
     "type": "turbo-module",
     "version": "0.50.3"
+  },
+  "directories": {
+    "example": "example"
   }
 }
